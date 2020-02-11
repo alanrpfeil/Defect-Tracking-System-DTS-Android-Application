@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ImageUploaderActivity"
+    tools:showIn="@layout/activity_image_uploader">
+
+    <TextView
+        android:id="@+id/ImageUpload"
+        android:layout_width="346dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Image Upload"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageView"
+        android:visibility="gone"
+        tools:layout_editor_absoluteY="40dp"
+        />
+    <Button
+        android:id="@+id/uploadBn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:text="Upload image"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/chooseBn"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="31dp"
+        android:text="Choose image" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="356dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="27dp"
+        android:text="You can choose an image from the external storage by click the button below. Once, the image loads, you can then upload the image."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+</RelativeLayout>

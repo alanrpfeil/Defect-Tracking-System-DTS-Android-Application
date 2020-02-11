@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SubmissionActivity"
+    tools:showIn="@layout/activity_submission">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ComplaintsReferrals"
+            android:layout_width="346dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Submit New Defect"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectName"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Defect Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="118dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectImpact"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Defect Impact"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectDescription"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Description"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="343dp" />
+
+        <TextView
+            android:id="@+id/defectIncidentClassHeader"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Incident Class"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@id/class_no">
+
+            <RadioButton
+                android:id="@+id/class_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/class_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:clickable="false" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectItemNum"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Item Number"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="676dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectLotNum"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Lot Number"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="787dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectMaterialGrp"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Material Group"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="898dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectOrderKey"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Order Key"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1009" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectPONum"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="PO Number"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1120dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectPrimaryLoc"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Primary Location"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1231dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/DefectPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Defect Priority"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="410dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@id/priority3">
+
+            <RadioButton
+                android:id="@+id/priority1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Priority 1 - Critical" />
+
+            <RadioButton
+                android:id="@+id/priority2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Priority 2 - Medium" />
+
+            <RadioButton
+                android:id="@+id/priority3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Priority 3 - Low" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectProdSuggCause"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Production Suggested Cause"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1453dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectRecommend"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Recommendation"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1564dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectSecondaryLoc"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Secondary Location"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1675dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectSite"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Site"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1786dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectSubDepartment"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Sub Department"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1897dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectSuppSuggCause"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Supplier Suggested Cause"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="2008dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectSupplier"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Supplier"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="2096dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="63dp">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defectDepartment"
+            android:layout_width="338dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:hint="Department"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="2096dp" />
+
+        <ProgressBar
+            android:id="@+id/loadsubmit"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="#CA8337" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
